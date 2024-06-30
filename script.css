@@ -313,7 +313,7 @@
     padding: 5px;
   }
   #Warranty{
-    background-color: bisque;
+    background-color: #ff00f2;
     display: grid;
     grid-template-columns: repeat(4,auto);
     justify-content: space-between;
