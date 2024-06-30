@@ -4,128 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro-Cart</title>
-    <link rel="icon" href="FirSiteIcon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="script.css">
+    <link rel="icon" href="Images/FirSiteIcon.png">
 </head>
-<body>
-    <header>
-        <div id="pagelogo">
-            <a href="index.html" id="brandlogo"> <!--tag(thẻ) a được dùng để làm cho những dòng bên trong được gắn hyperlink tới cái attribute là href của nó -->
-                <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
-                <h1 id="brandname">Furniro</h1>
-            </a>
+<header class="main_header">
+    <div id="pagelogo">
+        <a href="index.html" id="brandlogo"> 
+            <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
+            <h1 id="brandname">Furniro</h1>
+        </a>
+    </div>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/personalert.png" alt="Person alert"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/Search.png" alt="Search"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/heart.png" alt="Favorite"></a></li>
+        <li class="main_header"><a href="Cart.html"><img width="80%" height="auto" src="Images/shoppingcart.png" alt="Shopping cart"></a></li>
+    </ul>
+</header>
+<nav id="susnav">
+    <img id="navimg" src="Images/backgroundheader.png" alt="shop">
+    <div id="idknav">
+    <img  id="otherweblogo" src="Images/FirSiteIcon.png" alt="">
+    <h1 font-size: 1vw;>Cart</h1>
+    <p font-size: 1vw;><b >Home ></b> Cart</p></div>
+</nav>
+<main id="Cartmain">
+    <article id="sanpham">
+        <dl id="Cartdl">
+            <div id="div1">
+            <p></p>
+            <dt class="menu" id="menu1">Product</dt>
+            <dt class="menu" id="menu2">Price</dt>
+            <dt class="menu" id="menu=3">Quantity</dt>
+            <dt class="menu" id="menu4">Subtotal</dt>
+            </div>
+            <div id="div2">
+            <img id="Cartdlimg" src="Images/sofa.png" alt="sofa">
+            <dd class="info">Asgaard sofa</dd>
+            <dd class="info">Rs 250,000.00</dd>
+            <form action="/action_page.php" class="Cartform">
+                <input type="text" id="inputcart" name="firstname" placeholder=" 1 "></form>
+            <dd class="info">Rs 250,000.00</dd>
+            <img class="info" src="Images/trashcan.png" alt="trashcan"></div>
+        </dl>
+   </article>
+
+    <article id="total">
+        <h1>Card Totals</h1>
+        <div>
+        <p><b>Subtotal</b></p>
+        <p style="color: lightgray;">Rs 250,000.00</p></div>
+        <div>
+        <p><b>Total</b></p>
+        <p style="color: goldenrod">Rs 250,000.00</p></div>
+        <button id="totalbutton">Check Out</button>
+    </article></main>
+    <br>
+    <article id="Warranty">
+        <div id="Warranty_01">
+        <img src="Images/highquality.png" alt="High_quality_pic">
+        <h5>High Quality</h5>
+        <p>Crafted from top materials</p>
         </div>
-        <nav id="pagenav"> <!--thẻ nav được dùng để website hiểu được cái bên trong được specifically design cho vụ link navigation, dù thẻ div vẫn làm đc nma làm v để khi đọc code nhìn có ý nghĩa và ng đọc hiểu được là mình đang hiểu mình cần phải làm gì chứ ko phải cứ quăng nó vô div ko là được-->
-            <ul id="pagenavlist">
-                <li> <a href="index.html" id="homelink">Home</a></li>
-                <li> <a href="Shop.html" id="shoplink">Shop</a></li>
-                <li> <a href="About.html" id="aboutlink">About</a></li>
-                <li> <a href="Contact.html" id="contactlink">Contact</a></li>
-            </ul>
-        </nav>
-        <nav id="supportnav">
-            <ul id="supportnavlist">
-                <li> <img id="alert" src="Images/Alert.png" alt="Alert-Icon"></li>
-                <li> <img id="search" src="Images/Search.png" alt="Search-Icon"></li>
-                <li> <img id="heart" src="Images/Heart.png" alt ="Heart-Icon"></li>
-                <li> <a href="Cart.html"> <img id="cart" src="Images/ShoppingCart.png" alt ="Cart-Icon"> </a></li>
-            </ul>
-        </nav>
-    </header>
+        <div id="Warranty_02">
+        <img src="Images/warranty.png" alt="warranty_protection_pic">
+        <h5>Warranty Protection</h5>
+        <p>over 2 years</p>
+        </div>
+        <div id="Warranty_03">
+        <img src="Images/shipping.png" alt="free_shipping_pic">
+        <h5>Free Shipping</h5>
+        <p>Order over 150 $</p>
+        </div>
+        <div id="Warranty_04">
+        <img src="Images/support.png" alt="support_pic">
+        <h5>24/7 Support</h5>
+        <p>Dedicated support</p>
+        </div>
+    </article>
 
-    <main>
-        <section id="section-1">
-            <centre id="s1-heading">
-                <img id="icon" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
-                <h1 id="s1-l1"><b>Cart</b></h1>
-                <p id="s1-l2"><b>Home ></b> Cart</p>
-            </centre>
-        </section>
-        <section id="section-2">
-            <div id="cart-heading">
-                <h4>Product</h4>
-                <h4>Price</h4>
-                <h4>Quantity</h4>
-                <h4>Subtotal</h4>
-            </div>
-            <div id="cart">
-                <img id="asgaard-sofa" src="Images/Asgaard-Sofa.png" alt="Asgaard-Sofa-Image">
-                <p id="product">Asgaard sofa</p>
-                <p id="price">Rp 250.000,00</p>
-                <form id="quantity">
-                    <input type="number" placeholder="1">
-                </form>
-                <h5 id="subtotal">Rp 250.000,00</h5>
-                <img id="delete" src="Images/Trash-Can.png" alt="Trash-Can-Image" onclick="clicked()">
-            </div>
-            <div id="total">
-                <h3>Cart Totals</h3>
-                <h5>Subtotal</h5> <p>Rp 250.000,00</p>
-                <h5>Total</h5> <h4>Rp 250.000,00</h4>
-                <button id="s2-checkout"><a href="Payment-Options.html">Check Out</a></button>
-            </div>
 
-        </section>
-        <section id="section-3">
-            <ul id="bannerlist">
-                <l><img id="quality" src="Images/Trophy.png" alt="Trophy-Image">
-                    <div id="quality-desc">
-                        <h3>High Quality</h3>
-                        <p>crafted from top materials</p>
-                    </div>
-                </l>
-                <l><img id="warranty" src="Images/Checkmark.png" alt="Checkmark-Image">
-                    <div id="warranty-desc">
-                        <h3>Warranty Protection</h3>
-                        <p>Over 2 years</p>
-                    </div>
-                </l>
-                <l><img id="shipping" src="Images/Shipping.png" alt="Shipping-Image">
-                    <div id="shipping-desc">
-                        <h3>Free Shipping</h3>
-                        <p>Order over 150 $</p>
-                    </div>
-                </l>
-                <l><img id="support" src="Images/Support.png" alt="Support-Image">
-                    <div id="support-desc">
-                        <h3>24/7 Support</h3>
-                        <p>Dedicated support</p>
-                    </div>
-                </l>
-            </ul>
-        </section>   
-    </main>
+<hr>
+<footer>
+    
+    <div class="footer"><h3>Furniro.</h3>
+    <p style="color: lightgray;">
+        400 University Drive Suite 200 Coral Gables, <br>FL 33134 USA
+    </p></div>
 
-    <footer>
-        <hr>
-        <h3 id="footer-heading">Funiro.</h3>
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-        <nav id="footernav">
-            <div id="footerlink">
-                <p id="footerlinkheading">Links</p>
-                <ul id="footerlinklist">
-                    <li><a class="footernavlink" href="index.html">Home</a></li>
-                    <li><a class="footernavlink" href="Shop.html">Shop</a></li>
-                    <li><a class="footernavlink" href="About.html">About</a></li>
-                    <li><a class="footernavlink" href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div id="footerhelp">
-                <p id="footerhelpheading">Help</p>
-                <ul id="footerhelplist">
-                    <li><a class="footernavlink" href="Payment-Options.html">Payment Options</a></li>
-                    <li><a class="footernavlink" href="Returns.html">Returns</a></li>
-                    <li><a class="footernavlink" href="Privacy-Policies.html">Privacy Policies</a></li>
-                </ul>
-            </div>
-            <form id="footerform">
-                <p id="footerformheading">Newsletter</p>
-                <input type="text" placeholder="Enter Your Email Address">
-                <button id="subscribe-button">SUBSCRIBE</button>
-            </form>
-        </nav>
-        <hr style="width: 90%;">
-        <p id="furnirorights">2023 furino. All rights reserved</p>
-    </footer>
-</body>
+    <div class="footer"><h4 style="color: lightgray;"><b>Links</b></h4>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="footer"><h4 style="color: lightgray;"><b>Help</b></h4>
+    <ul>
+        <li><b>Payment Options</b></li>
+        <li><b>Returns</b></li>
+        <li><b>Privacy Policy</b></li>
+    </ul></div>
+    <div class="footer">
+    <h4 style="color: lightgray;"><b>Newsletter</b></h4>
+    <form> <input type="text">
+    <button>SUBSCRIBE</button></form></div>
+</footer>
+    <hr>
+    <p id="lastfoot">2023 Furniro. All rights reserved</p>
 </html>
