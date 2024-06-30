@@ -4,166 +4,124 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro-Shop</title>
-    <link rel="icon" href="FirSiteIcon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="script.css">
+    <link rel="icon" href="Images/FirSiteIcon.png">
 </head>
-<body>
-    <header>
-        <div id="pagelogo">
-            <a href="index.html" id="brandlogo"> <!--tag(thẻ) a được dùng để làm cho những dòng bên trong được gắn hyperlink tới cái attribute là href của nó -->
-                <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
-                <h1 id="brandname">Furniro</h1>
-            </a>
-        </div>
-        <nav id="pagenav"> <!--thẻ nav được dùng để website hiểu được cái bên trong được specifically design cho vụ link navigation, dù thẻ div vẫn làm đc nma làm v để khi đọc code nhìn có ý nghĩa và ng đọc hiểu được là mình đang hiểu mình cần phải làm gì chứ ko phải cứ quăng nó vô div ko là được-->
-            <ul id="pagenavlist">
-                <li> <a href="index.html" id="homelink">Home</a></li>
-                <li> <a href="Shop.html" id="shoplink">Shop</a></li>
-                <li> <a href="About.html" id="aboutlink">About</a></li>
-                <li> <a href="Contact.html" id="contactlink">Contact</a></li>
-            </ul>
-        </nav>
-        <nav id="supportnav">
-            <ul id="supportnavlist">
-                <li> <img id="alert" src="Images/Alert.png" alt="Alert-Icon"></li>
-                <li> <img id="search" src="Images/Search.png" alt="Search-Icon"></li>
-                <li> <img id="heart" src="Images/Heart.png" alt ="Heart-Icon"></li>
-                <li> <a href="Images/Cart.html"> <img id="cart" src="ShoppingCart.png" alt ="Cart-Icon"> </a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main>
-        <section id="section-1">
-            <centre id="s1-heading">
-                <h1 id="s1-l1"><b>Shop</b></h1>
-                <p id="s1-l2"><b>Home ></b> Shop</p>
-            </centre>
-            <nav id="shop-s1-nav">
-                <ul id="shop-s1-nav-list">
-                    <li><img id="filter" src="Images/Filter.png" alt="Filter-Image"><p id="filter">Filter</p></li>
-                    <li><img id="grid" src="Images/Grid.png" alt="Grid-Image"></li>
-                    <li><img id="list" src="Images/List.png" alt="List-Image"></li>
-                </ul>
-                <div id="verticalline" style="width:1px;height:100px;background-color:black"></div>
-                <p id="resultsshown">Showing 1-16 of 32 results</p>
-                <form id="nav-show">
-                    <p id="show">Show</p>
-                    <input type="number" placeholder="16">
-                </form>
-                <form id="sortby">
-                    <p id="sort">Sort by</p>
-                    <input type="text" placeholder="default">
-                </form>
-            </nav>
-        </section>
-        <section id="section-2">
-            <div id="s2-r1"> <!--r=row-->
-                <div id="s2-r1-c1"> <!--c=column-->
-                    <div id="s2-r1-c1-syltherine">
-                        <img id="Syltherine" src="Images/Syltherine.png" alt="Syltherine-Image" onfocus="focused()">
-                        <p class="sale">-30%</p>
-                        <h3 class="productname">Syltherine</h3>
-                        <p class="desc">Stylish cafe chair</p>
-                        <h3 class="nprice">Rp 2.500.000</h3>
-                        <p class="oprice"><del>Rp 3.500.000</del></p>
-                    </div>
-                </div>
-                <div id="s2-r1-c2">
-                    <div id="s2-r1-c2-leviosa">
-                        <img id="Leviosa" src="Images/Leviosa.png" alt="Leviosa-Image" onfocus="focused()">
-                        <h3 class="productname">Leviosa</h3>
-                        <p class="desc">Stylish cafe chair</p>
-                        <h3 class="nprice">Rp 2.500.000</h3>
-                    </div>
-                </div>
-                <div id="s2-r1-c3">
-                    <div id="s2-r1-c3-lolito">
-                        <img id="Lolito" src="Images/Lolito.png" alt="Lolito-Image" onfocus="focused()">
-                        <p class="sale">-50%</p>
-                        <h3 class="productname">Lolito</h3>
-                        <p class="desc">Luxury big sofa</p>
-                        <h3 class="nprice">Rp 7.000.000</h3>
-                        <p class="oprice"><del>Rp 14.000.000</del></p>
-                    </div>
-                </div>
-                <div id="s2-r1-c4">
-                    <div id="s2-r1-c4-respira">
-                        <img id="Respira" src="Images/Respira.png" alt="Respira-Image" onfocus="focused()">
-                        <p class="condition">New</p>
-                        <h3 class="productname">Respira</h3>
-                        <p class="desc">Outdoor bar table and stool</p>
-                        <h3 class="nprice">Rp 500.000</h3>
-                    </div>
-                </div>
-            </div>
-            <div id="s2-button">
-                <button class="button"><h5>1</h5></button>
-                <button class="button"><h5>2</h5></button>
-                <button class="button"><h5>3</h5></button>
-                <button class="button"><h5>Next</h5></button>
-            </div>
-        </section>
-        <section id="section-3">
-            <ul id="bannerlist">
-                <l><img id="quality" src="Images/Trophy.png" alt="Trophy-Image">
-                    <div id="quality-desc">
-                        <h3>High Quality</h3>
-                        <p>crafted from top materials</p>
-                    </div>
-                </l>
-                <l><img id="warranty" src="Images/Checkmark.png" alt="Checkmark-Image">
-                    <div id="warranty-desc">
-                        <h3>Warranty Protection</h3>
-                        <p>Over 2 years</p>
-                    </div>
-                </l>
-                <l><img id="shipping" src="Images/Shipping.png" alt="Shipping-Image">
-                    <div id="shipping-desc">
-                        <h3>Free Shipping</h3>
-                        <p>Order over 150 $</p>
-                    </div>
-                </l>
-                <l><img id="support" src="Images/Support.png" alt="Support-Image">
-                    <div id="support-desc">
-                        <h3>24/7 Support</h3>
-                        <p>Dedicated support</p>
-                    </div>
-                </l>
-            </ul>
-        </section>
-    </main>
-
-    <footer>
-        <hr>
-        <h3 id="footer-heading">Funiro.</h3>
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-        <nav id="footernav">
-            <div id="footerlink">
-                <p id="footerlinkheading">Links</p>
-                <ul id="footerlinklist">
-                    <li><a class="footernavlink" href="index.html">Home</a></li>
-                    <li><a class="footernavlink" href="Shop.html">Shop</a></li>
-                    <li><a class="footernavlink" href="About.html">About</a></li>
-                    <li><a class="footernavlink" href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div id="footerhelp">
-                <p id="footerhelpheading">Help</p>
-                <ul id="footerhelplist">
-                    <li><a class="footernavlink" href="Payment-Options.html">Payment Options</a></li>
-                    <li><a class="footernavlink" href="Returns.html">Returns</a></li>
-                    <li><a class="footernavlink" href="Privacy-Policies.html">Privacy Policies</a></li>
-                </ul>
-            </div>
-            <form id="footerform">
-                <p id="footerformheading">Newsletter</p>
-                <input type="text" placeholder="Enter Your Email Address">
-                <button id="subscribe-button">SUBSCRIBE</button>
+<header class="main_header">
+    <div id="pagelogo">
+        <a href="index.html" id="brandlogo"> 
+            <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
+            <h1 id="brandname">Furniro</h1>
+        </a>
+    </div>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/personalert.png" alt="Person alert"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/Search.png" alt="Search"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/heart.png" alt="Favorite"></a></li>
+        <li class="main_header"><a href="Cart.html"><img width="80%" height="auto" src="Images/shoppingcart.png" alt="Shopping cart"></a></li>
+    </ul>
+</header>
+<nav id="susnav">
+    <img id="navimg" src="Images/backgroundheader.png" alt="shop">
+    <div id="idknav">
+    <img  id="otherweblogo"src="Images/FirSiteIcon.png" alt="">
+    <h1 font-size: 1vw;>Shop</h1>
+    <p font-size: 1vw;><b >Home ></b> Shop</p></div>
+</nav>
+<main id="Shopmain">
+    <article id="articlename">
+    <div>
+        <img width="auto" src="Images/filter.png" alt="Filter">
+        <p style="font-size: 1vw;"><b>Filter</b></p>
+        <img src="Images/gridbigcircle.png" alt="Grid_big_round">
+        <img src="Images/viewlist.png" alt="View_list">
+        <p style="font-size: 1vw;"><b>|</b></p>
+        <p style="font-size: 1vw;">Showing 1    -<p id="countprod" style="font-size: 1vw;"></p><p style="font-size: 1vw;">of 32 results</p></p>
+    </div>
+    <div style="font-size: 1vw;"><p>Show</p>
+        <form action="/action_page.php" class="Shopform">
+            <input type="text" id="Shopinput" name="firstname">
+        </form>
+            <form action="/action_page.php" class="Shopform">
+                <label for="fname">Sort by</label>
+                <input type="text" id="fname" name="firstname" placeholder="Default">
             </form>
-        </nav>
-        <hr style="width: 90%;">
-        <p id="furnirorights">2023 furino. All rights reserved</p>
-    </footer>
-</body>
+    </div>
+    <br></br>
+    </article>
+    <div class="product1">
+    <div id="products" ></div>
+    <div id="showmorebuttoncontain">
+    <a><button id="showmorebutton" >Show more</button></a></div>
+    </div></div>
+    <script src="api.js"></script>
+ <br></br>
+<article id="Next_Page">
+    <button class="nextpagebutton">1</button>
+    <button class="nextpagebutton">2</button>
+    <button class="nextpagebutton">3</button>
+    <button class="nextpagebutton">Next</button>
+</article>
+<br></br>
+    <article id="Warranty">
+        <div id="Warranty_01">
+        <img src="Images/highquality.png" alt="High_quality_pic">
+        <h5>High Quality</h5>
+        <p>Crafted from top materials</p>
+        </div>
+        <div id="Warranty_02">
+        <img src="Images/warranty.png" alt="warranty_protection_pic">
+        <h5>Warranty Protection</h5>
+        <p>over 2 years</p>
+        </div>
+        <div id="Warranty_03">
+        <img src="Images/shipping.png" alt="free_shipping_pic">
+        <h5>Free Shipping</h5>
+        <p>Order over 150 $</p>
+        </div>
+        <div id="Warranty_04">
+        <img src="Images/support.png" alt="support_pic">
+        <h5>24/7 Support</h5>
+        <p>Dedicated support</p>
+        </div>
+    </article>
+</main>
+<hr>
+<footer>
+    
+    <div class="footer"><h3>Furniro.</h3>
+    <p style="color: lightgray;">
+        400 University Drive Suite 200 Coral Gables, <br>FL 33134 USA
+    </p></div>
+
+    <div class="footer"><h4 style="color: lightgray;"><b>Links</b></h4>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="footer"><h4 style="color: lightgray;"><b>Help</b></h4>
+    <ul>
+        <li><b>Payment Options</b></li>
+        <li><b>Returns</b></li>
+        <li><b>Privacy Policy</b></li>
+    </ul></div>
+    <div class="footer">
+    <h4 style="color: lightgray;"><b>Newsletter</b></h4>
+    <form> <input type="text">
+    <button>SUBSCRIBE</button></form></div>
+</footer>
+    <hr>
+    <p>2023 Furniro. All rights reserved</p>
 </html>

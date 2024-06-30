@@ -4,170 +4,168 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Furniro-Blog</title>
-    <link rel="icon" href="FirSiteIcon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap">
+    <link rel="stylesheet" href="script.css">
+    <link rel="icon" href="Images/FirSiteIcon.png">
 </head>
-<body>
-    <header>
-        <div id="pagelogo">
-            <a href="index.html" id="brandlogo"> <!--tag(thẻ) a được dùng để làm cho những dòng bên trong được gắn hyperlink tới cái attribute là href của nó -->
-                <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
-                <h1 id="brandname">Furniro</h1>
-            </a>
-        </div>
-        <nav id="pagenav"> <!--thẻ nav được dùng để website hiểu được cái bên trong được specifically design cho vụ link navigation, dù thẻ div vẫn làm đc nma làm v để khi đọc code nhìn có ý nghĩa và ng đọc hiểu được là mình đang hiểu mình cần phải làm gì chứ ko phải cứ quăng nó vô div ko là được-->
-            <ul id="pagenavlist">
-                <li> <a href="index.html" id="homelink">Home</a></li>
-                <li> <a href="Shop.html" id="shoplink">Shop</a></li>
-                <li> <a href="About.html" id="aboutlink">About</a></li>
-                <li> <a href="Contact.html" id="contactlink">Contact</a></li>
-            </ul>
-        </nav>
-        <nav id="supportnav">
-            <ul id="supportnavlist">
-                <li> <img id="alert" src="Images/Alert.png" alt="Alert-Icon"></li>
-                <li> <img id="search" src="Images/Search.png" alt="Search-Icon"></li>
-                <li> <img id="heart" src="Images/Heart.png" alt ="Heart-Icon"></li>
-                <li> <a href="Images/Cart.html"> <img id="cart" src="ShoppingCart.png" alt ="Cart-Icon"> </a></li>
-            </ul>
-        </nav>
-    </header>
+<header class="main_header">
+    <div id="pagelogo">
+        <a href="index.html" id="brandlogo"> 
+            <img id="iconlogo" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
+            <h1 id="brandname">Furniro</h1>
+        </a>
+    </div>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    <ul>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/personalert.png" alt="Person alert"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/Search.png" alt="Search"></a></li>
+        <li class="main_header"><a href=""><img width="80%" height="auto" src="Images/heart.png" alt="Favorite"></a></li>
+        <li class="main_header"><a href="Cart.html"><img width="80%" height="auto" src="Images/shoppingcart.png" alt="Shopping cart"></a></li>
+    </ul>
+</header>
+<nav id="susnav">
+    <img id="navimg" src="Images/backgroundheader.png" alt="shop">
+    <div id="idknav">
+    <img id="otherweblogo" src="Images/FirSiteIcon.png" alt="">
+    <h1 font-size: 1vw;>Blog</h1>
+    <p font-size: 1vw;><b >Home ></b> Blog</p></div>
+</nav>
 
-    <main>
-        <section id="section-1">
-            <centre id="s1-heading">
-                <img id="icon" src="Images/FirSiteIcon.png" alt="Furniro-Icon">
-                <h1 id="s1-l1"><b>Blog</b></h1>
-                <p id="s1-l2"><b>Home ></b> Blog</p>
-            </centre>
-        </section>
-        <section id="section-2">
-            <div id="blog">
-                <div id="blog-01">
-                    <img class="blog-image" src="Images/Blog-01.png" alt="Blog-01-Image">
-                    <ul id="blog-info-list">
-                        <li><img id="author-01" src="Images/Author.png" alt="Author-Image"> Admin</li>
-                        <li><img id="date-01" src="Images/Date.png" alt="Calender-Image"> 14 Oct 2022</li>
-                        <li><img id="tag-01" src="Images/Tag.png" alt="Tag-Image"> Wood</li>
-                    </ul>
-                    <h1 class="post-title">Going all-in with millennial design</h1>
-                    <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin<br>aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis<br>in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit<br>ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
-                    <h5>Read more</h5>
-                    <hr style="width:3%;text-align:left;margin-left:0">
-                </div>
-            </div>
-            <div id="sideline">
-                <form>
-                    <input type="text"> <img id="Search-Icon" src="Images/Search.png" alt="Search-Image">
-                </form>
-                <div id="categories">
-                    <h3>Categories</h3>
-                    <ul id="categories-list">
-                        <li><p>Crafts&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;2</p></li>
-                        <li><p>Desgin&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;8</p></li>
-                        <li><p>Handmade&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;7</p></li>
-                        <li><p>Interior&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;1</p></li>
-                        <li><p>Wood&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;6</p></li>
-                    </ul>
-                </div>
-                <div id="recent-posts">
-                    <h3>Recent Posts</h3>
-                    <ul id="posts-list">
-                        <li>
-                            <img id="post-01" src="Images/Post-01.png" alt="Post-01-Image">
-                            <h5 class="post-title">Going all-in with<br>millennial design</h5>
-                            <p class="date">03 Aug 2022</p>
-                        </li>
-                        <li>
-                            <img id="post-02" src="Images/Post-02.png" alt="Post-02-Image">
-                            <h5 class="post-title">Exploring new ways<br>of decorating</h5>
-                            <p class="date">03 Aug 2022</p>
-                        </li>
-                        <li>
-                            <img id="post-03" src="Images/Post-03.png" alt="Post-03-Image">
-                            <h5 class="post-title">Handmade pieces<br>that took time to make</h5>
-                            <p class="date">03 Aug 2022</p>
-                        </li>
-                        <li>
-                            <img id="post-04" src="Images/Post-04.png" alt="Post-04-Image">
-                            <h5 class="post-title">Modern home in<br>Milan</h5>
-                            <p class="date">03 Aug 2022</p>
-                        </li>
-                        <li>
-                            <img id="post-05" src="Images/Post-05.png" alt="Post-05-Image">
-                            <h5 class="post-title">Colorful office<br>redesign</h5>
-                            <p class="date">03 Aug 2022</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div id="s2-button">
-                <button class="button"><h5>1</h5></button>
-                <button class="button"><h5>2</h5></button>
-                <button class="button"><h5>3</h5></button>
-                <button class="button"><h5>Next</h5></button>
-            </div>
-        </section>
-        <section id="section-3">
-            <ul id="bannerlist">
-                <l><img id="quality" src="Images/Trophy.png" alt="Trophy-Image">
-                    <div id="quality-desc">
-                        <h3>High Quality</h3>
-                        <p>crafted from top materials</p>
-                    </div>
-                </l>
-                <l><img id="warranty" src="Images/Checkmark.png" alt="Checkmark-Image">
-                    <div id="warranty-desc">
-                        <h3>Warranty Protection</h3>
-                        <p>Over 2 years</p>
-                    </div>
-                </l>
-                <l><img id="shipping" src="Images/Shipping.png" alt="Shipping-Image">
-                    <div id="shipping-desc">
-                        <h3>Free Shipping</h3>
-                        <p>Order over 150 $</p>
-                    </div>
-                </l>
-                <l><img id="support" src="Images/Support.png" alt="Support-Image">
-                    <div id="support-desc">
-                        <h3>24/7 Support</h3>
-                        <p>Dedicated support</p>
-                    </div>
-                </l>
-            </ul>
-        </section>
-    </main>
+<main>
+    <div class="blog-container">
+    <article id="blog1">
+    <img class="blogimg" src="Images/laptop.png" alt="Laptop_pic">
+    <div id="desc_img">
+        <img src="Images/admin.png" alt="Admin">
+        <p>Admin</p>
+        <img src="Images/date.png" alt="Date">
+        <p>14 Oct 2022</p>
+        <img src="Images/material.png" alt="Material">
+        <p>Wood</p>
+    </div>
+    <h2>Exploring new ways of decorating</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+    <img class="blogimg" src="Images/decorating.png" alt="Laptop_pic">
+    <div id="desc_img">
+        <img src="Images/admin.png" alt="Admin">
+        <p>Admin</p>
+        <img src="Images/date.png" alt="Date">
+        <p>14 Oct 2022</p>
+        <img src="Images/material.png" alt="Material">
+        <p>Wood</p>
+    </div>
+    <h2>Handmade pieces that took time to make </h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+    <img class="blogimg" src="Images/coffee.png" alt="Laptop_pic">
+    <div id="desc_img">
+        <img src="Images/admin.png" alt="Admin">
+        <p>Admin</p>
+        <img src="Images/date.png" alt="Date">
+        <p>14 Oct 2022</p>
+        <img src="Images/material.png" alt="Material">
+        <p>Wood</p>
+    </div>
+    <h2>Going all-in with millennial design</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mus mauris vitae ultricies leo integer malesuada nunc. In nulla posuere sollicitudin aliquam ultrices. Morbi blandit cursus risus at ultrices mi tempus imperdiet. Libero enim sed faucibus turpis in. Cursus mattis molestie a iaculis at erat. Nibh cras pulvinar mattis nunc sed blandit libero. Pellentesque elit ullamcorper dignissim cras tincidunt. Pharetra et ultrices neque ornare aenean euismod elementum.</p>
+    <button id="readmorebutton"><b>Read more</b></button>
+    </article>
+    <article id="blog2nd">
+    <input type="text">
+    <h3>Categories</h3>
+    <dl id = "categories">
+        <dt>Crafts</dt>
+        <dd>2</dd>
+        <dt>Design</dt>
+        <dd>8</dd>
+        <dt>Handmade</dt>
+        <dd>7</dd>
+        <dt>Interior</dt>
+        <dd>1</dd>
+        <dt>Wood</dt>
+        <dd>6</dd>
+        </dl>
+        <h3>Recent Posts</h3>
+        <div class="recpo">
+            <img src="Images/Post-01.png" alt="penandpaper">
+            <p><b>Going all-in with  with millennial design</b> <br>03 Aug 2022</p>
+            <img src="Images/Post-02.png" alt="penandpaper">
+            <p><b>Exploring new ways of decorating</b> <br>03 Aug 2022</p>
+            <img src="Images/Post-03.png" alt="penandpaper">
+            <p><b>Handmade pieces that took time to make</b> <br>03 Aug 2022</p>
+            <img src="Images/Post-04.png" alt="penandpaper">
+            <p><b>Modern home in Milan</b> <br>03 Aug 2022</p>
+            <img src="Images/Post-05.png" alt="penandpaper">
+            <p><b>Colorful office redesign</b> <br>03 Aug 2022</p>
+        
+        </div>
     
-    <footer>
-        <hr>
-        <h3 id="footer-heading">Funiro.</h3>
-        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
-        <nav id="footernav">
-            <div id="footerlink">
-                <p id="footerlinkheading">Links</p>
-                <ul id="footerlinklist">
-                    <li><a class="footernavlink" href="index.html">Home</a></li>
-                    <li><a class="footernavlink" href="Shop.html">Shop</a></li>
-                    <li><a class="footernavlink" href="About.html">About</a></li>
-                    <li><a class="footernavlink" href="Contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div id="footerhelp">
-                <p id="footerhelpheading">Help</p>
-                <ul id="footerhelplist">
-                    <li><a class="footernavlink" href="Payment-Options.html">Payment Options</a></li>
-                    <li><a class="footernavlink" href="Returns.html">Returns</a></li>
-                    <li><a class="footernavlink" href="Privacy-Policies.html">Privacy Policies</a></li>
-                </ul>
-            </div>
-            <form id="footerform">
-                <p id="footerformheading">Newsletter</p>
-                <input type="text" placeholder="Enter Your Email Address">
-                <button id="subscribe-button">SUBSCRIBE</button>
-            </form>
-        </nav>
-        <hr style="width: 90%;">
-        <p id="furnirorights">2023 furino. All rights reserved</p>
-    </footer>
-</body>
+    </article></div>
+    <br>
+    <article id="Next_Page">
+        <button class="nextpagebutton">1</button>
+        <button class="nextpagebutton">2</button>
+        <button class="nextpagebutton">3</button>
+        <button class="nextpagebutton">Next</button>
+    </article>
+<br>
+    <article id="Warranty">
+        <div id="Warranty_01">
+        <img src="Images/highquality.png" alt="High_quality_pic">
+        <h5>High Quality</h5>
+        <p>Crafted from top materials</p>
+        </div>
+        <div id="Warranty_02">
+        <img src="Images/warranty.png" alt="warranty_protection_pic">
+        <h5>Warranty Protection</h5>
+        <p>over 2 years</p>
+        </div>
+        <div id="Warranty_03">
+        <img src="Images/shipping.png" alt="free_shipping_pic">
+        <h5>Free Shipping</h5>
+        <p>Order over 150 $</p>
+        </div>
+        <div id="Warranty_04">
+        <img src="Images/support.png" alt="support_pic">
+        <h5>24/7 Support</h5>
+        <p>Dedicated support</p>
+        </div>
+    </article>
+</main>
+
+<hr>
+<footer>
+    
+    <div class="footer"><h3>Furniro.</h3>
+    <p style="color: lightgray;">
+        400 University Drive Suite 200 Coral Gables, <br>FL 33134 USA
+    </p></div>
+
+    <div class="footer"><h4 style="color: lightgray;"><b>Links</b></h4>
+    <ul>
+        <li class="main_header"><a href="index.html">Home</a></li>
+        <li class="main_header"><a href="Shop.html">Shop</a></li>
+        <li class="main_header"><a href="Blog.html">About</a></li>
+        <li class="main_header"><a href="Contact.html">Contact</a></li>
+    </ul>
+    </div>
+    <div class="footer"><h4 style="color: lightgray;"><b>Help</b></h4>
+    <ul>
+        <li><b>Payment Options</b></li>
+        <li><b>Returns</b></li>
+        <li><b>Privacy Policy</b></li>
+    </ul></div>
+    <div class="footer">
+    <h4 style="color: lightgray;"><b>Newsletter</b></h4>
+    <form> <input type="text">
+    <button>SUBSCRIBE</button></form></div>
+</footer>
+    <hr>
+    <p id="lastfoot">2023 Furniro. All rights reserved</p>
 </html>
