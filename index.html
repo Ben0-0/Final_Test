@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniro-Home</title>
+    <link rel="icon" href="FirSiteIcon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <div id="pagelogo">
+            <a href="index.html" id="brandlogo"> <!--tag(thẻ) a được dùng để làm cho những dòng bên trong được gắn hyperlink tới cái attribute là href của nó -->
+                <img id="iconlogo" src="FirSiteIcon.png" alt="Furniro-Icon">
+                <h1 id="brandname">Furniro</h1>
+            </a>
+        </div>
+        <nav id="pagenav"> <!--thẻ nav được dùng để website hiểu được cái bên trong được specifically design cho vụ link navigation, dù thẻ div vẫn làm đc nma làm v để khi đọc code nhìn có ý nghĩa và ng đọc hiểu được là mình đang hiểu mình cần phải làm gì chứ ko phải cứ quăng nó vô div ko là được-->
+            <ul id="pagenavlist">
+                <li> <a href="index.html" id="homelink">Home</a></li>
+                <li> <a href="Shop.html" id="shoplink">Shop</a></li>
+                <li> <a href="About.html" id="aboutlink">About</a></li>
+                <li> <a href="Contact.html" id="contactlink">Contact</a></li>
+            </ul>
+        </nav>
+        <nav id="supportnav">
+            <ul id="supportnavlist">
+                <li> <img id="alert" src="Images/Alert.png" alt="Alert-Icon"></li>
+                <li> <img id="search" src="Images/Search.png" alt="Search-Icon"></li>
+                <li> <img id="heart" src="Images/Heart.png" alt ="Heart-Icon"></li>
+                <li> <a href="Cart.html"> <img id="cart" src="Images/ShoppingCart.png" alt ="Cart-Icon"> </a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="section-1">
+            <div id="s1-box">
+                <p id="s1-l1">New Arrival</p> <!--s = section; l = line-->
+                <h1 id="s1-l2">Discover Our New Collection</h1>
+                <p id="s1-l3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis.</p>
+                <button id="s1-buy"><a href="Shop.html">BUY NOW</a> </button>
+            </div>
+        </section>
+        <section id="section-2">
+            <h3 id="s2-l1">Browse The Range</h3>
+            <p id="s2-l2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div id="s2-dining">
+                <img id="s2-dining-image" src="Images/Dining.png" alt="Dining-Room-Image">
+                <h4 id="s2-dining-l1">Dining</h4>
+            </div>
+            <div id="s2-living">
+                <img id="s2-living-image" src="Images/Living.png" alt="Living-Room-Image">
+                <h4 id="s2-living-l1">Living</h4>
+            </div>
+            <div id="s2-bed">
+                <img id="s2-bed-image" src="Images/Bed.png" alt="Bed-Room-Image">
+                <h4 id="s2-bed-l1">Bedroom</h4>
+            </div>
+        </section>
+        <section id="section-3">
+            <h2 id="s3-l1">Our Products</h2>
+            <div id="s3-r1"> <!--r=row-->
+                <div id="s3-r1-c1"> <!--c=column-->
+                    <div id="s3-r1-c1-syltherine">
+                        <img id="Syltherine" src="Images/Syltherine.png" alt="Syltherine-Image" onfocus="focused()">
+                        <p class="sale">-30%</p>
+                        <h3 class="productname">Syltherine</h3>
+                        <p class="desc">Stylish cafe chair</p>
+                        <h3 class="nprice">Rp 2.500.000</h3>
+                        <p class="oprice"><del>Rp 3.500.000</del></p>
+                    </div>
+                </div>
+                <div id="s3-r1-c2">
+                    <div id="s3-r1-c2-leviosa">
+                        <img class="Leviosa" src="Images/Leviosa.png" alt="Leviosa-Image" onfocus="focused()">
+                        <h3 class="productname">Leviosa</h3>
+                        <p class="desc">Stylish cafe chair</p>
+                        <h3 class="nprice">Rp 2.500.000</h3>
+                    </div>
+                </div>
+            </div>
+            <div id="s3-showmorebutton">
+                <button id="showmore">Show More</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <h3 id="footer-heading">Funiro.</h3>
+        <p id="address">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
+        <nav id="footernav">
+            <div id="footerlink">
+                <p id="footerlinkheading">Links</p>
+                <ul id="footerlinklist">
+                    <li><a class="footernavlink" href="index.html">Home</a></li>
+                    <li><a class="footernavlink" href="Shop.html">Shop</a></li>
+                    <li><a class="footernavlink" href="About.html">About</a></li>
+                    <li><a class="footernavlink" href="Contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div id="footerhelp">
+                <p id="footerhelpheading">Help</p>
+                <ul id="footerhelplist">
+                    <li><a class="footernavlink" href="Payment-Options.html">Payment Options</a></li>
+                    <li><a class="footernavlink" href="Returns.html">Returns</a></li>
+                    <li><a class="footernavlink" href="Privacy-Policies.html">Privacy Policies</a></li>
+                </ul>
+            </div>
+            <form id="footerform">
+                <p id="footerformheading">Newsletter</p>
+                <input type="text" placeholder="Enter Your Email Address">
+                <button id="subscribe-button">SUBSCRIBE</button>
+            </form>
+        </nav>
+        <hr style="width: 90%;">
+        <p id="furnirorights">2023 furino. All rights reserved</p>
+    </footer>
+</body>
+</html>
